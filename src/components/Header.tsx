@@ -18,11 +18,16 @@ function Header() {
     <header className=" text-white border-b border-sky-500">
       <nav className="">
         <ul> 
-        <li onClick={()=> showContent()}>{headerNav.about}</li>
-        <li>{headerNav.contact}</li>
+        <li className="cursor-pointer">{headerNav.about}</li>
+        <li className="cursor-pointer">{headerNav.contact}</li>
         <li><a href="https://github.com/">{headerNav.gitHub}</a></li>
         </ul>
      </nav>
+     <h1 className="">Mikael Mårtensson</h1>
+        <p className="">
+          System developer with passion for active learning, problem solving,
+          adaptablility and social skills
+        </p>
       <VisitedBtn/>
     </header>
   );

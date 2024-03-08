@@ -1,5 +1,6 @@
 body {
   background: linear-gradient(rgb(15, 23, 42), rgb(16, 26, 54));
+  background-repeat: no-repeat;
 }
 
 #root{

@@ -11,7 +11,7 @@ interface AboutItem {
 
 
 
-function About(show) {
+function About() {
     const [aboutData, setAboutData] = useState<AboutItem[]>([]);
 
    
@@ -31,7 +31,7 @@ function About(show) {
 
   return (
      
-  <div className={` ${show ? 'hidden' : 'flex flex-row gap-3 h-96 w-100 overflow-y-hidden transition-shadow '}`}>
+  <div className='hidden flex flex-row gap-3 h-96 w-100 overflow-y-hidden transition-shadow'>
     <div className="carousel-container">
       <div className="carousel flex gap-3 ">
         {aboutData.map((item, index) => (
