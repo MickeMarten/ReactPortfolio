@@ -8,17 +8,18 @@ function Header() {
     contact: 'Contact',
     gitHub: 'GitHub'
   }
- const [show, setShow] = useState(false)
+ let [show, setShow] = useState(false)
 
   function showContent(){
-   
+    setShow(true)
+    console.log('hej')
   }
  
   return (
     <header className=" text-white border-b border-sky-500">
       <nav className="">
         <ul> 
-        <li className="cursor-pointer">{headerNav.about}</li>
+        <li className="cursor-pointer" onClick={()=> showContent()}>{headerNav.about}</li>
         <li className="cursor-pointer">{headerNav.contact}</li>
         <li><a href="https://github.com/">{headerNav.gitHub}</a></li>
         </ul>

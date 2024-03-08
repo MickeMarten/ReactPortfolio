@@ -1,22 +1,22 @@
-function Contact(){
 
-    let contact = {
-        email: 'KarlMikael.Martensson@gmail.com',
-        adress: 'Butgatan 16',
-        postalAdress:'60240, Norrköping',
-        phone: 'No Access',
-        
+function Contact(props){
 
-    }
+
+    const currentDate = new Date().toDateString();
     return (
-        <ul className="hidden">
-            <li>Email: {contact.email}</li>
-            <li>Adress: {contact.adress}</li>
-            <li>Postal adress: {contact.postalAdress}</li>
-            <li>Phone: {contact.phone}</li>
+        <div className=" ? : hidden"> 
+        <ul className="">
+            <li>Email: {props.email}</li>
+            <li>Adress: {props.adress}</li>
+            <li>Postal adress: {props.postalAdress}</li>
+            <li>Phone: {props.phone}</li>
+            <li>Am I on vacation, {currentDate}: {props.vacation ? 'Yes': 'No'}</li>
             
         </ul>
+        </div>
     )
 }
+
+
 
 export default Contact;

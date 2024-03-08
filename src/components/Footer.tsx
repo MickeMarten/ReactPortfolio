@@ -1,5 +1,3 @@
-import VisitedBtn from "./CountBtn";
-import { useState } from "react";
 
 function Footer(){
  
