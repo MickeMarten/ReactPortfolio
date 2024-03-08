@@ -1,12 +1,13 @@
 import Contact from "./Contact.tsx";
 import About from './About.tsx'
+import VisitedBtn from "./CountBtn.tsx";
 
 
 
 function MainSection() {
   return ( <section className="text-white"> 
-  
-        <About/>
+    <VisitedBtn/>
+        
       <Contact email='KarlMikael.Martensson@gmail.com' adress='Butgatan 16' postalAdress='60240, Norrköping Sweden' phone='+46739919218' vacation={false} />
     </section>)
 }
