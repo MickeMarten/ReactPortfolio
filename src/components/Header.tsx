@@ -1,7 +1,5 @@
 import { useState } from "react";
-import VisitedBtn from "./CountBtn";
 import { useEffect } from "react";
-import About from "./About";
 
 interface AboutItem {
   description: string;

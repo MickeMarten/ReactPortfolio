@@ -1,5 +1,4 @@
 import Contact from "./Contact.tsx";
-import About from './About.tsx'
 import VisitedBtn from "./CountBtn.tsx";
 
 

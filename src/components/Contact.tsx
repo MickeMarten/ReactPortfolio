@@ -1,5 +1,5 @@
 
-function Contact(props){
+function Contact(props:any){
 
 
     const currentDate = new Date().toDateString();
