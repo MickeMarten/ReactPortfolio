@@ -13,7 +13,7 @@ function Header() {
 
    useEffect(() =>{
         async function fetchAboutData(){
-          const apiUrl = import.meta.env.DEV ? 'http://localhost:1337/api/about' : ''
+          const apiUrl = import.meta.env.DEV ? 'http://localhost:1337/api/about' : 'https://shark-app-yja4d.ondigitalocean.app/api/about'
             const response = await fetch(apiUrl);
             const loot = await response.json();
             setAboutData(loot);
